@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: Street_Fighter
+Version: 0.1.0
+Summary: a competitive platform for players, a way to connect gamers, a space for friendly matches
+Requires-Python: >=3.10
+Requires-Dist: flask>=3.0

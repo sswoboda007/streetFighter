@@ -1,0 +1,4 @@
+Flask==2.0.3
+gunicorn==20.1.0
+sqlite3  # This package is included with Python, no need to list it in requirements.
+```

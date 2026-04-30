@@ -1,0 +1,9 @@
+README.md
+app.py
+pyproject.toml
+tournaments.py
+Street_Fighter.egg-info/PKG-INFO
+Street_Fighter.egg-info/SOURCES.txt
+Street_Fighter.egg-info/dependency_links.txt
+Street_Fighter.egg-info/requires.txt
+Street_Fighter.egg-info/top_level.txt
