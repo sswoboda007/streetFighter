@@ -7,7 +7,7 @@ name = "Street_Fighter"
 version = "0.1.0"
 description = "a competitive platform for players, a way to connect gamers, a space for friendly matches"
 requires-python = ">=3.10"
-dependencies = ["flask>=3.0"]
+dependencies = ["flask>=3.0", "pygame-ce>=2.5"]
 
 [tool.setuptools]
 py-modules = ["app"]
