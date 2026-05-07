@@ -10,4 +10,19 @@ requires-python = ">=3.10"
 dependencies = ["flask>=3.0"]
 
 [tool.setuptools]
-py-modules = ["app", "tournaments"]
+py-modules = ["app"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=app --cov=tournaments --cov=models --cov-report=term-missing --cov-fail-under=100"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["app", "tournaments", "models"]
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+]

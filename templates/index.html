@@ -3,39 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Street Fighter - Character Profiles</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Street Fighter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Street Fighter</h1>
-        <nav>
-            <ul>
-                <li><a href="#profiles">Character Profiles</a></li>
-                <li><a href="#matches">Match Options</a></li>
-                <li><a href="#tournaments">Tournaments</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header><h1>Street Fighter</h1></header>
     <main>
-        <section id="profiles">
-            <h2>Character Profiles</h2>
-            <p>View and customize your character profiles.</p>
-            <!-- Character profiles will be displayed here -->
-        </section>
-        <section id="matches">
-            <h2>Match Options</h2>
-            <p>Choose your match type: Friendly or Ranked.</p>
-            <!-- Match options will be displayed here -->
-        </section>
-        <section id="tournaments">
-            <h2>Tournaments</h2>
-            <p>Join local and online tournaments!</p>
-            <!-- Tournament information will be displayed here -->
-        </section>
+        <div id="game"></div>
+        <p class="hint">Controls: <b>A / D</b> move &middot; <b>W</b> jump &middot; <b>S</b> block &middot; <b>J</b> light punch &middot; <b>K</b> heavy punch</p>
     </main>
-    <footer>
-        <p>&copy; 2023 Street Fighter. All Rights Reserved.</p>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+    <script type="module" src="{{ url_for('static', filename='game/main.js') }}"></script>
 </body>
 </html>
